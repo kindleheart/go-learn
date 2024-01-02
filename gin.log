@@ -1,0 +1,3 @@
+{"animal":"walrus","level":"warning","msg":"A group of walrus emerges from the ocean","size":10,"time":"2023-11-08T18:59:13+08:00"}
+[GIN] 2023/11/08 - 18:59:13 | 200 |     806.417µs |             ::1 | GET      "/hello"
+[GIN] 2023/11/08 - 18:59:13 | 404 |         709ns |             ::1 | GET      "/favicon.ico"

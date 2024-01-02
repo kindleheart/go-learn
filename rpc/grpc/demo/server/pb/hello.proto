@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+option go_package = "server/pb";
+
+package pb;
+
+// 定义服务
+service Greeter {
+  // SayHello 方法
+  rpc SayHello (HelloRequest) returns (HelloResponse) {}
+  // 服务端返回流式数据
+  rpc LotsOfReplies(HelloRequest) returns (stream HelloResponse);
+  // 客户端发送流式数据
+  rpc LotsOfGreetings(stream HelloRequest) returns (HelloResponse);
+  // 双向流式数据
+  rpc BidiHello(stream HelloRequest) returns (stream HelloResponse);
+}
+
+// 请求消息
+message HelloRequest {
+  string name = 1;
+}
+
+// 响应消息
+message HelloResponse {
+  string reply = 1;
+}

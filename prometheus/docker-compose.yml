@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  prometheus:
+    image: bitnami/prometheus
+    environment:
+      - TZ=Asia/Shanghai
+    privileged: true
+    volumes:
+      - ./conf/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml  # 将 prometheus 配置文件挂载到容器里
+    ports:
+      - "9090:9090"                     # 设置容器9090端口映射指定宿主机端口，用于宿主机访问可视化web
+    restart: always
+
+  grafana:
+    image: grafana/grafana
+    environment:
+      - TZ=Asia/Shanghai
+    ports:
+      - "3000:3000"                        # 设置容器3000端口映射指定宿主机端口，用于宿主机访问可视化web
+    restart: always

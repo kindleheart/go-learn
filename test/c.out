@@ -1,0 +1,12 @@
+mode: set
+goLearn/test/sort.go:3.28,8.2 4 1
+goLearn/test/sort.go:10.43,11.18 1 1
+goLearn/test/sort.go:11.18,13.3 1 1
+goLearn/test/sort.go:14.2,16.13 3 1
+goLearn/test/sort.go:16.13,17.32 1 1
+goLearn/test/sort.go:17.32,19.4 1 1
+goLearn/test/sort.go:20.3,20.32 1 1
+goLearn/test/sort.go:20.32,22.4 1 1
+goLearn/test/sort.go:23.3,23.13 1 1
+goLearn/test/sort.go:23.13,27.4 3 1
+goLearn/test/sort.go:29.2,30.24 2 1
