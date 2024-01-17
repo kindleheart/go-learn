@@ -1,4 +1,4 @@
-package jie_cache
+package jiecache
 
 import (
 	"fmt"

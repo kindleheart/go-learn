@@ -1,7 +1,7 @@
-package jie_cache
+package jiecache
 
 import (
-	"jie_cache/lru"
+	"jie_cache/jiecache/lru"
 	"sync"
 )
 

@@ -1,4 +1,4 @@
-package jie_cache
+package jiecache
 
 // A ByteView holds an immutable view of bytes.
 type ByteView struct {
